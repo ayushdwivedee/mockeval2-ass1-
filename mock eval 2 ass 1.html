@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eval 2- Masai In News</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #container {
+        background-color: rgb(227, 253, 244);
+        
+      }
+      h1 {
+        padding: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 40px;
+      }
+      #news {
+        margin: auto;
+         
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+      }
+      #news>div{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        width: 90%;
+        background-color: white;
+       padding: 20px;
+       border-radius: 10px;
+      }
+      .img{
+        margin: auto;
+        width: 100%;
+        border: 1px solid rgb(184, 182, 182);
+        border-radius: 10px;
+      }
+      .img>img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      .img+div{
+        margin-top: 20px;
+      }
+      .date{
+        color: blue;
+        line-height: 30px;
+      }
+      .detail{
+        margin-top: 10px;
+        color: rgb(84, 77, 79);
+      }
+      .button{
+         
+        width: 10%;
+         margin: auto;
+         margin-top: 40px;
+          
+         padding:20px;
+      }
+      .text{
+        border-radius: 5px;
+        color: red;
+        text-align: center;
+        border: 1px solid red ;
+        padding:10px;
+      }
+      .text:hover{
+        background-color:rgb(248, 204, 204) ;
+        cursor: pointer;
+      }
+      .logo{
+        margin: auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 35px;
+      }
+      .logo>div{
+        border: 1px solid rgb(209, 208, 208);
+        border-radius: 15px;
+      }
+      .logo>div>img{
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Masai In The News</h1>
+      <div id="news">
+        <div>
+          <div class="img" >
+            <img
+              src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ET_3754cc10ec.png"
+              alt="The Economic Times"
+            />
+          </div>
+          <div>
+            <p class="date">21 Dec 2021</p>
+          <h4>
+            Edtech startup Masai School acquires data analytics firm Prepleaf
+            for $1 million.
+          </h4>
+          <p  class="detail">
+            With their latest acquisition,Masai moves one step closer to
+            becoming INdi...
+          </p>
+          </div>
+        </div>
+        <div>
+          <div class="img">
+            <img
+              src="https://masai-website-images.s3.ap-south-1.amazonaws.com/money_Control_c3e25f5ceb.png"
+              alt="money control"
+            />
+          </div>
+          <div>
+            <p class="date">26 Oct 2021</p>
+            <h4>
+                Kunal Shah,Vijay Shekhar Sharma,Amrish Rau among 21 angel investors
+                in Masai School
+            </h4>
+            <p  class="detail">
+                Masai School is aiming to expand to 20 smaller cities by March 2022
+                and exp...
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="img">
+            <img
+              src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vccircle_6ef779c958.png"
+              alt="Vccircle"
+            />
+          </div>
+          <div>
+            <p class="date">18 Aug 2020</p>
+          <h4>
+            Unitus Ventures leads pre-Series A funding for coding-focussed Masai
+            School
+          </h4>
+          <p class="detail">
+            Software coding platform Masai School has raised $2.5 million (Rs
+            18.6 cror...
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <b class="text">SEE MORE ></b>
+      </div>
+    </div>
+    <h1>Our Investors (Who believed in us)</h1>
+    <div class="logo">
+        <div>
+            <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt="logo">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg" alt="logo">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/images/our-investors/unitus-borderless.svg" alt="logo">
+        </div>
+    </div>
+  </body>
+</html>
