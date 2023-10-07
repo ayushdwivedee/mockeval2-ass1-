@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .shadow{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        nav{
+            height: 60px;
+            width: 90%;
+            margin: auto;
+            
+        }
+        label.logo{
+            color: white;
+            background-color: blueviolet;
+            padding: 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        nav ul {
+            float: right;
+            margin-right: 80px;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 25px;
+        }
+        nav ul li a{
+            color:black;
+            font-weight: 700;
+        }
+        .blue{
+            color: blue;
+        }
+        #content{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #content-1{
+            
+            width: 50%;
+            padding: 110px 100px 0px 0px;
+            
+        }
+        h4{
+            color: blue;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h1{
+            line-height: 40px;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+        }
+        p{
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(147, 147, 147);
+            margin-bottom: 30px;
+        }
+        #content-1>div{
+            display: flex;
+        }
+        #content-1>div>div>img{
+            width: 200px;
+        }
+        #content-1>div>div>p{
+            color: black;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        #content-2{
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
+        }
+        #content-2>div{
+            padding: 40px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .fa{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 40px;
+        }
+        .fa-building-o{
+            background-color: purple;
+        }
+        .fa-calculator{
+            background-color: orange
+        }
+        .fa-calendar{
+            background-color: rgb(5, 203, 203);
+        }
+        h3{
+            line-height: 40px;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        h3+p{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow">
+        <nav>
+            <label class="logo">StudyLab</label>
+            <ul>
+                <li><a class="blue" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Instructor</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+        <div id="content-1">
+            <h4>welcome to studylab</h4>
+            <h1>We are studylab an online learning center</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div>
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH0M4w7_Qo7uTKsQl6-w76fRZmR-2UFWQENg&usqp=CAU" alt="video"></div>
+                <div>
+                    <p>Learn anything from Studylab, Watch video</p>
+                </div>
+            </div>
+        </div>
+        <div id="content-2">
+            <div>
+                <i class="fa fa-id-card-o"  ></i>
+                <h3>Top Quality Content</h3>
+                <p>A small river named Duden flows by their place and supplies</p>
+            </div>
+            <div>
+                <i class="fa fa-building-o"></i>
+                <h3>Highly Skilled Instructor</h3>
+                <p>A small river named Duden flows by their place and supplies</p>
+            </div>
+            <div>
+                <i class="fa fa-calculator"></i>
+                <h3>World Class & Quiz</h3>
+                <p>A small river named Duden flows by their place and supplies</p>
+            </div>
+            <div>
+                <i class="fa fa-calendar"></i>
+                <h3>Get Certified</h3>
+                <p>A small river named Duden flows by their place and supplies</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
